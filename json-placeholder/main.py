@@ -45,7 +45,7 @@ class TestPost():
     @allure.severity(allure.severity_level.NORMAL)
     @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
     @allure.issue("JW-1.3.1")
-    @pytest.mark.parametrize("title,body,userId", [('foo', 'bar', '1'),('foo1', 'bar1', '2'), ('_!#%^&*()@#$%12345689\|,./12342345678', '_!#%^&*()\|,./123423456789', '1'), ('foo', '', '1')])
+    @pytest.mark.parametrize("title,body,userId", [('foo', 'bar', '1'),('foo1', 'bar1', '2'), ('_!#%^&*()@#$%12345689\|,./12342345678', '_!#%^&*()\|,./123423456789', '1'), ('foo', '', '1'), ('1'*1000000, '2'*1000000, '1')])
     def test_create_post(self, api: Api, config: dict, title: str, body: str, userId: str):
         result=api.post(config["posts_link"], body={
                 'title': title,
