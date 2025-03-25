@@ -45,7 +45,7 @@ class TestPost():
     @allure.severity(allure.severity_level.NORMAL)
     @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
     @allure.issue("JW-1.3.1")
-    @pytest.mark.parametrize("title,body,userId", [('foo', 'bar', '1'),('foo1', 'bar1', '2')])
+    @pytest.mark.parametrize("title,body,userId", [('foo', 'bar', '1'),('foo1', 'bar1', '2'), ('_!#%^&*()@#$%12345689\|,./12342345678', '_!#%^&*()\|,./123423456789', '1'), ('foo', '', '1')])
     def test_create_post(self, api: Api, config: dict, title: str, body: str, userId: str):
         result=api.post(config["posts_link"], body={
                 'title': title,
@@ -75,10 +75,10 @@ class TestPost():
     @allure.title("Test update post")
     @allure.epic("Posts")
     @allure.tag("critical_path", "positive")
-    @allure.severity(allure.severity_level.NORMAL)
+    @allure.severity(allure.severity_level.NORMAL) #TODO:
     @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
     @allure.issue("JW-1.3.3")
-    @pytest.mark.parametrize("method,title,body,userId", [('PUT','foo', 'bar', '1'), ('PATCH','foo', 'bar', '1'), ('PATCH', None, 'bar', '2'), ('PATCH', 'foo', None, '1'), ('PATCH', 'foo', 'bar', None), ('PATCH', None, None, None)])
+    @pytest.mark.parametrize("method,title,body,userId", [('PUT','foo', 'bar', '1'), ('PATCH','foo', 'bar', '1'), ('PATCH', None, 'bar', '2'), ('PATCH', 'foo', None, '3'), ('PATCH', 'foo', 'bar', None), ('PATCH', None, None, None)])
     def test_update_post(self, api: Api, config: dict, method: str, title: str, body: str, userId: str):
         ibody={}
         if title is not None:
