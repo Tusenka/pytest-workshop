@@ -1,5 +1,4 @@
 This is pares [job tasks](https://docs.google.com/document/d/1l4kdinXmpVy0o2t_sBG84ygSiLd33v5gH9Srb8fHg4Y/edit?tab=t.0).
-For solution used class equlity classes and boundary valuse design techniques. Tests contain functional and non functional tests as well. It contains integration and system level tests. For development used agile development model.
 
 To run tests you need allure has been installed:
 
