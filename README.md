@@ -1,4 +1,4 @@
-This is pytest workshop.
+This is pares job tasks.
 To run you need allure has been installed:
 
     pip install allure-pytes
@@ -12,8 +12,12 @@ To run tests:
      `pip3 install -r requirements.txt`
 3. Run pytest:   
 
-        `pytest --alluredir=%allure_result_folder% ./<folder>`
+        `pytest --alluredir=allure_result_folder ./<folder>`
 4. See report:
 
-       ` allure serve %allure_result_folder%`
+       ` allure serve allure-result-folder`
+
+5. You could run postman collections from testrails-reports-example folder. Vairalbes set are provided as json-placeholder-posts-variables.json variables. Environment variables for dev provided as dev.postman_environment.json.
+
+
 
