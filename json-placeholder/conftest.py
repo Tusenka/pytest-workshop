@@ -1,6 +1,13 @@
+import json
 import pytest
+import os
+import pathlib
 
 
 @pytest.fixture(scope="session")
 def config():
-    return {'base_url': 'https://jsonplaceholder.typicode.com', 'posts_link': 'posts'}
+    ENV=os.getenv('ENV') or 'dev'
+    current_dir=str(pathlib.Path(__file__).resolve().parent)
+    config_path =os.getenv('CONFIG_PATH') or f"{current_dir}/configs/{ENV}/config.json"
+    with open(config_path) as fp:
+        return json.load(fp)
