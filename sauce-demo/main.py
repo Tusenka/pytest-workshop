@@ -25,7 +25,6 @@ class LoginPage:
         password_field.send_keys(password)
         self.browser.find_element(value=self.config['button_id']).click()
 
-#TODO::
 def screenshot_on_fail(browser_attr='browser'):
     def decorator(cls):
         def with_screen_shot(self, fn, *args, **kwargs):
