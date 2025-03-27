@@ -1,4 +1,3 @@
-import json
 from functools import partialmethod
 from inspect import getfullargspec
 from urllib.parse import urljoin
