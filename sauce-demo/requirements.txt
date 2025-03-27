@@ -1,2 +1,3 @@
-pytest
-allure-pytest-common
+pytest>=8.0.0
+allure-pytest-commons>=2.8.0
+selenium>=4.24.0

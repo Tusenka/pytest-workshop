@@ -1,99 +1,103 @@
 import json
+from functools import partialmethod
+from inspect import getfullargspec
+from urllib.parse import urljoin
 
 import allure
 import pytest
-import requests
-
+from _pytest.monkeypatch import MonkeyPatch
+from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.firefox.options import Options as FirefoxOption
+from selenium.webdriver.chrome.options import Options as ChromeOption
 
 #POM implementation
-class Api:
-    def __init__(self, config: dict):
-        self.base_url=config["base_url"]
+class LoginPage:
+    def __init__(self, browser: WebDriver, config: dict):
+        self.browser=browser
+        self.config=config
 
-    def _link(self, link: str):
-        return f"{self.base_url}/{link}"
+    def login(self, username: str, password: str):
+        self.browser.get(self.config['login_page'])
+        login_field=self.browser.find_element(value=self.config['login_id'])
+        login_field.send_keys(username)
+        password_field=self.browser.find_element(value=self.config['password_id'])
+        password_field.send_keys(password)
+        self.browser.find_element(value=self.config['button_id']).click()
 
-    def post(self, url: str, *, body=None, headers=None):
-        if headers is None:
-            headers = {"Content-type": "application/json; charset=UTF-8"}
-        return requests.post(url=self._link(url), json=body, headers=headers)
+def screenshot_on_fail(browser_attr='browser'):
+    def decorator(cls):
+        def with_screen_shot(self, fn, *args, **kwargs):
+            try:
+                return fn(self, *args, **kwargs)
+            except Exception:
+                browser = getattr(args, browser_attr)
+                filename = 'screenshot-%s.png' % fn.__name__
+                browser.get_screenshot_as_file(filename)
+                raise
 
-    def patch(self, url: str, *, body=None, headers=None):
-        if headers is None:
-            headers = {"Content-type": "application/json; charset=UTF-8"}
-        return requests.patch(url=self._link(url), json=body, headers=headers)
+        for attr, fn in cls.__dict__.items():
+            if attr.startswith('test_') and callable(fn) and browser_attr in getfullargspec(fn).args:
+                setattr(cls, attr, partialmethod(with_screen_shot, fn))
 
-    def put (self, url: str, *, body=None, headers=None):
-        if headers is None:
-            headers = {"Content-type": "application/json; charset=UTF-8"}
-        return requests.patch(url=self._link(url), json=body, headers=headers)
+        return cls
 
-    def delete(self, url: str, *, headers=None):
-        return requests.delete(url=self._link(url), headers=headers)
+    return decorator
 
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
 
-class TestPost():
+@pytest.fixture(scope="function", autouse=True)
+def pytest_browser_rel_path( browser, config, monkeypatch: MonkeyPatch):
+        browser_get = browser.get
 
-    @pytest.fixture(scope="session")
-    def api(self, config: dict):
-        yield Api(config)
+        def get_rel_url(rel_path: str):
+            browser_get(urljoin(config['base_url'], rel_path))
 
+        monkeypatch.setattr(browser, "get", get_rel_url)
 
-    @allure.title("Test create post ")
-    @allure.epic("Posts")
-    @allure.tag("critical_path", "positive")
-    @allure.severity(allure.severity_level.NORMAL)
-    @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
-    @allure.issue("JW-1.3.1")
-    @pytest.mark.parametrize("title,body,userId", [('foo', 'bar', '1'),('foo1', 'bar1', '2')])
-    def test_create_post(self, api: Api, config: dict, title: str, body: str, userId: str):
-        result=api.post(config["posts_link"], body={
-                'title': title,
-                'body': body,
-                'userId': userId
-            })
-        assert result.status_code==201
-        post=json.loads(result.text)
-        assert post['body']==body
-        assert post['title']==title
-        assert post['userId'] == userId
-        assert post['id']>=0
-        
-        
-    @allure.title("Test delete post")
-    @allure.epic("Posts")
-    @allure.tag("critical_path", "positive")
-    @allure.severity(allure.severity_level.NORMAL)
-    @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
-    @allure.issue("JW-1.3.2")
-    @pytest.mark.parametrize("postId", ['1', '2'])
-    def test_delete_post(self, api: Api, config: dict, postId: str):
-        result=api.delete(f"{config['posts_link']}/{postId}")
-        assert result.status_code==200
+class TestLogin():
+    @pytest.fixture(scope="module", params=['Firefox', 'Chrome'], ids=["firefox", "chrome"])
+    @allure.title("web driver")
+    def browser(self, request: pytest.FixtureRequest):
+        driver = None
+        match request.param:
+            case 'Firefox':
+                options = FirefoxOption()
+                options.add_argument('--headless')
+                driver = webdriver.Firefox(options=options)
+            case 'Chrome':
+                options = ChromeOption()
+                options.add_argument('--headless')
+                driver = webdriver.Chrome()
+        driver.maximize_window()
+        yield driver
+        driver.close()
 
 
-    @allure.title("Test update post")
-    @allure.epic("Posts")
-    @allure.tag("critical_path", "positive")
-    @allure.severity(allure.severity_level.NORMAL)
-    @allure.link("https://jsonplaceholder.typicode.com/posts", name="")
-    @allure.issue("JW-1.3.3")
-    @pytest.mark.parametrize("method,title,body,userId", [('PUT','foo', 'bar', '1'), ('PATCH','foo', 'bar', '1'), ('PATCH', None, 'bar', '2'), ('PATCH', 'foo', None, '1'), ('PATCH', 'foo', 'bar', None), ('PATCH', None, None, None)])
-    def test_update_post(self, api: Api, config: dict, method: str, title: str, body: str, userId: str):
-        ibody={}
-        if title is not None:
-            ibody['title']=title
-        if body is not None:
-            ibody['body']=body
-        if userId is not None:
-            ibody['userId']=userId
-        if method=='PUT':
-            result=api.put(f"{config['posts_link']}/1", body=ibody)
-        else:
-            result=api.patch(f"{config['posts_link']}/1", body=ibody)
-        assert result.status_code==200
-        post=json.loads(result.text)
-        assert body is None and len(post['body'])>0 or post['body']==body
-        assert title is None and len(post['title'])>0 or post['title']==title
-        assert userId is None and post['userId']>=0 or post['userId'] == userId
-        assert post['id']>=0
+    @pytest.fixture(scope="module")
+    @allure.title("login page")
+    def login_page(self, browser: WebDriver, config) ->WebDriver:
+        yield LoginPage(browser, config)
+
+
+    @allure.feature("Check login pathway")
+    @allure.epic("Sauce Demo")
+    @allure.tag("critical_path", "" , "login")
+    @allure.description("This is the demo test for linux")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.link("https://www.saucedemo.com/", name="Sauce Demo")
+    @allure.issue("JW-3.1.1")
+    @pytest.mark.parametrize("username, password", [('standard_user', 'secret_sauce'),  ('problem_user', 'secret_sauce'),
+                                                    ('performance_glitch_user','secret_sauce'),('error_user','secret_sauce')])
+    def test_success_login_by_password(self, browser: WebDriver, login_page: LoginPage, config: dict, username: str, password: str):
+        with allure.step(f"I login to swag as user {username} with password {password}"):
+            login_page.login(username, password)
+        with allure.step("And it cookies contains current user"):
+            assert browser.get_cookies()[0]['value']==username
+        with allure.step("And I am on inventory page"):
+            assert browser.current_url==urljoin(config['base_url'], config['inventory_page'])
+
