@@ -62,6 +62,137 @@
 					"response": []
 				},
 				{
+					"name": "Get All Posts By Existing User Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const schema = {",
+									" //   \"$schema\": \"https://gregsdennis.github.io/json-everything/meta/unique-keys\",",
+									"    \"type\": \"array\",",
+									"    \"properties\": {",
+									"                \"id\": { \"type\": \"number\"},",
+									"                \"userId\": { \"type\": \"number\"},",
+									"                \"title\": { \"type\": \"string\"},",
+									"                \"body\": { \"type\": \"string\"}",
+									"            },",
+									"    \"required\": [\"userId\", \"title\",\"id\"],",
+									"//    \"uniqueKeys\": [\"/id\"]",
+									"        ",
+									"};",
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('API response schema is valid ', () => {",
+									"    pm.expect(response).to.have.jsonSchema(schema);",
+									"}); ",
+									"",
+									"const correctUserId=parseInt(pm.environment.get(\"testUserId\"));",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"It returns correct correct userId\", function() {",
+									"    pm.expect(pm.response.json()[0].userId).equals(correctUserId)",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?userId={{testUserId}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "{{testUserId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts By Post Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const schema = {",
+									" //   \"$schema\": \"https://gregsdennis.github.io/json-everything/meta/unique-keys\",",
+									"    \"type\": \"array\",",
+									"    \"properties\": {",
+									"                \"id\": { \"type\": \"number\"},",
+									"                \"userId\": { \"type\": \"number\"},",
+									"                \"title\": { \"type\": \"string\"},",
+									"                \"body\": { \"type\": \"string\"}",
+									"            },",
+									"    \"required\": [\"userId\", \"title\",\"id\"],",
+									"//    \"uniqueKeys\": [\"/id\"]",
+									"        ",
+									"};",
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('API response schema is valid ', () => {",
+									"    pm.expect(response).to.have.jsonSchema(schema);",
+									"}); ",
+									"",
+									"const correctPostId=parseInt(pm.environment.get(\"correctPostId\"));",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"It returns correct post id\", function() {",
+									"    pm.expect(pm.response.json()[0].id).equals(correctPostId)",
+									"});",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"Its length is 1\", function() {",
+									"    pm.expect(pm.response.json().length).equals(1)",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?id={{correctPostId}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{correctPostId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create Post - base values class",
 					"event": [
 						{
@@ -545,6 +676,50 @@
 			"name": "Negative Scenarious",
 			"item": [
 				{
+					"name": "Get All Posts By Post Sql injection",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"It returns empty list\", function() {",
+									"    pm.expect(pm.response.json().length).equals(0)",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?id={{correctPostId}}' OR 1=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{correctPostId}}' OR 1=1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create Post - incorrect userId",
 					"event": [
 						{
@@ -912,6 +1087,85 @@
 							"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
 						}
 					]
+				},
+				{
+					"name": "Get All Posts By Not Existing User Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?userId={{notExistsUserId}}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "{{notExistsUserId}}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts By Not Existing Post Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"It returns empty list\", function() {",
+									"    pm.expect(pm.response.json().length).equals(0)",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?id={{incorrectPostId}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{incorrectPostId}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
