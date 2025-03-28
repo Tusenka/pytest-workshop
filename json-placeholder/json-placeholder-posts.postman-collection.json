@@ -1,211 +1,128 @@
 {
 	"info": {
 		"_postman_id": "7ed0a620-f24e-4a9b-b06e-b108d577aa8d",
-		"name": "Test json  posts",
+		"name": "test json placeholder posts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "43448227"
+		"_exporter_id": "43448227",
+		"_collection_link": "https://solar-shadow-853334.postman.co/workspace/My-Workspace~99a7a220-7f01-4922-8a20-0b03134a1516/collection/43448227-7ed0a620-f24e-4a9b-b06e-b108d577aa8d?action=share&source=collection_link&creator=43448227"
 	},
 	"item": [
 		{
-			"name": "Get All Posts",
-			"event": [
+			"name": "Positive Scenarious",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"const schema = {",
-							" //   \"$schema\": \"https://gregsdennis.github.io/json-everything/meta/unique-keys\",",
-							"    \"type\": \"array\",",
-							"    \"properties\": {",
-							"                \"id\": { \"type\": \"number\"},",
-							"                \"userId\": { \"type\": \"number\"},",
-							"                \"title\": { \"type\": \"string\"},",
-							"                \"body\": { \"type\": \"string\"}",
-							"            },",
-							"    \"required\": [\"userId\", \"title\",\"id\"],",
-							"//    \"uniqueKeys\": [\"/id\"]",
-							"        ",
-							"};",
-							"const response = pm.response.json();",
-							"",
-							"console.log(response)",
-							"",
-							"pm.test('API response schema is valid ', () => {",
-							"    pm.expect(response).to.have.jsonSchema(schema);",
-							"}); ",
-							"",
-							"pm.test('API response contais correct userId ', () => {",
-							"    pm.expect(response[\"userId\"]).to.be.greaterThan(0);",
-							"});"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/posts",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"posts"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Post - base values class",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"const schema = {",
-							"    \"type\": \"object\",",
-							"    \"properties\": {",
-							"                \"id\": { \"type\": \"number\"},",
-							"                \"userId\": { \"type\": \"string\"},",
-							"                \"title\": { \"type\": \"string\"},",
-							"                \"body\": { \"type\": \"string\"}",
-							"            },",
-							"    \"required\": [\"userId\", \"title\",\"id\"]   ",
-							"};",
-							"",
-							"const response = pm.response.json();",
-							"console.log(response)",
-							"",
-							"pm.test(\"Status code is 201\", function () {",
-							"  pm.response.to.have.status(201);",
-							"});",
-							"",
-							"pm.test('API response schema is valid ', () => {",
-							"    pm.expect(response).to.have.jsonSchema(schema);",
-							"}); ",
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Get All Posts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const schema = {",
+									" //   \"$schema\": \"https://gregsdennis.github.io/json-everything/meta/unique-keys\",",
+									"    \"type\": \"array\",",
+									"    \"properties\": {",
+									"                \"id\": { \"type\": \"number\"},",
+									"                \"userId\": { \"type\": \"number\"},",
+									"                \"title\": { \"type\": \"string\"},",
+									"                \"body\": { \"type\": \"string\"}",
+									"            },",
+									"    \"required\": [\"userId\", \"title\",\"id\"],",
+									"//    \"uniqueKeys\": [\"/id\"]",
+									"        ",
+									"};",
+									"const response = pm.response.json();",
+									"",
+									"",
+									"pm.test('API response schema is valid ', () => {",
+									"    pm.expect(response).to.have.jsonSchema(schema);",
+									"}); ",
+									"",
+									"pm.test('API response contais correct userId ', () => {",
+									"    pm.expect(response[0].userId).to.be.greaterThan(0);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/posts",
-					"host": [
-						"{{base_url}}"
 					],
-					"path": [
-						"posts"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Post - boundary values class",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.collectionVariables.set(\"randomInt\", _.random(10));",
-							"",
-							"const schema = {",
-							"    \"type\": \"object\",",
-							"    \"properties\": {",
-							"                \"id\": { \"type\": \"number\"},",
-							"                \"userId\": { \"type\": \"number\"},",
-							"                \"title\": { \"type\": \"string\"},",
-							"                \"body\": { \"type\": \"string\"},",
-							"            },",
-							"    \"required\": [\"userId\", \"title\",\"id\"]   ",
-							"};",
-							"",
-							"const response = pm.response.json();",
-							"console.log(response)",
-							"",
-							"pm.test(\"Status code is 201\", function () {",
-							"  pm.response.to.have.status(201);",
-							"});",
-							"",
-							"pm.test('API response schema is valid ', () => {",
-							"    pm.expect(response).not.to.have.jsonSchema(schema);",
-							"}); ",
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							"const uuid = crypto.randomUUID();",
-							"console.log(pm.variables); // '398de222-5bf9-4754-8e3e-011a55307014'"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"\",\n    \"randomKey\": \"{{randomString}}\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{base_url}}/posts",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"posts"
-					]
-				}
-			},
-			"response": [
 				{
-					"name": "Get all posts Copy",
-					"originalRequest": {
+					"name": "Create Post - base values class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const schema = {",
+									"    \"type\": \"object\",",
+									"    \"properties\": {",
+									"                \"id\": { \"type\": \"number\"},",
+									"                \"userId\": { \"type\": \"string\"},",
+									"                \"title\": { \"type\": \"string\"},",
+									"                \"body\": { \"type\": \"string\"}",
+									"            },",
+									"    \"required\": [\"userId\", \"title\",\"id\"]   ",
+									"};",
+									"",
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"  pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('API response schema is valid ', () => {",
+									"    pm.expect(response).to.have.jsonSchema(schema);",
+									"}); ",
+									"",
+									"const correctUserId=pm.environment.get(\"testUserId\")",
+									"const title=pm.environment.get(\"title\")",
+									"const body=pm.environment.get(\"body\")",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"It returns correct non empty post data\", function() {",
+									"    pm.expect(pm.response.json().userId).equals(correctUserId)",
+									"    pm.expect(pm.response.json().title).equals(title)",
+									"    pm.expect(pm.response.json().body).equals(body)",
+									"    pm.expect(pm.response.json().id).greaterThan(0)",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+							"raw": "{\n    \"userId\":\"{{testUserId}}\",\n    \"title\":\"{{title}}\",\n    \"body\":\"{{body}}\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -213,171 +130,452 @@
 							}
 						},
 						"url": {
-							"raw": "https://jsonplaceholder.typicode.com/posts",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts",
 							"host": [
-								"jsonplaceholder",
-								"typicode",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts"
 							]
 						}
 					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": []
+				},
+				{
+					"name": "Create Post - boundary values class Copy",
+					"event": [
 						{
-							"key": "Date",
-							"value": "Tue, 25 Mar 2025 13:00:50 GMT"
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"const schema = {",
+									"    \"type\": \"object\",",
+									"    \"properties\": {",
+									"                \"id\": { \"type\": \"number\"},",
+									"                \"userId\": { \"type\": \"number\"},",
+									"                \"title\": { \"type\": \"string\"},",
+									"                \"body\": { \"type\": \"string\"},",
+									"            },",
+									"    \"required\": [\"userId\", \"title\",\"id\"]   ",
+									"};",
+									"",
+									"const response = pm.response.json();",
+									"console.log(response)",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"  pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('API response schema is not valid ', () => {",
+									"    pm.expect(response).not.to.have.jsonSchema(schema);",
+									"}); ",
+									"",
+									"const correctUserId=pm.environment.get(\"testUserId\")",
+									"const title=pm.environment.get(\"title\")",
+									"const randomkey=pm.environment.get(\"randomKey\")",
+									"",
+									"//there are no simple way to compare values",
+									"pm.test(\"It returns correct non empty post data with empty body\", function() {",
+									"    pm.expect(pm.response.json().userId).equals(correctUserId)",
+									"    pm.expect(pm.response.json().title).equals(title)",
+									"    pm.expect(pm.response.json().body.length).equal(0)",
+									"    pm.expect(pm.response.json().id).greaterThan(0)",
+									"    pm.expect(pm.response.json().randomKey).equals(randomKey)",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						},
 						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "95"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Report-To",
-							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
-						},
-						{
-							"key": "Reporting-Endpoints",
-							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
-						},
-						{
-							"key": "Nel",
-							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "X-Ratelimit-Limit",
-							"value": "1000"
-						},
-						{
-							"key": "X-Ratelimit-Remaining",
-							"value": "999"
-						},
-						{
-							"key": "X-Ratelimit-Reset",
-							"value": "1742907654"
-						},
-						{
-							"key": "Vary",
-							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
-						},
-						{
-							"key": "Access-Control-Allow-Credentials",
-							"value": "true"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Expires",
-							"value": "-1"
-						},
-						{
-							"key": "Access-Control-Expose-Headers",
-							"value": "Location"
-						},
-						{
-							"key": "Location",
-							"value": "https://jsonplaceholder.typicode.com/posts/101"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Etag",
-							"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						},
-						{
-							"key": "cf-cache-status",
-							"value": "DYNAMIC"
-						},
-						{
-							"key": "Server",
-							"value": "cloudflare"
-						},
-						{
-							"key": "CF-RAY",
-							"value": "925e97eedc34e5e8-IAD"
-						},
-						{
-							"key": "alt-svc",
-							"value": "h3=\":443\"; ma=86400"
-						},
-						{
-							"key": "server-timing",
-							"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//pm.request.toJSON() doesn't return replaced variables body despite console logs",
+									"const randomKey=pm.variables.replaceIn(pm.request.toJSON().body.raw);",
+									"pm.environment.set(\"randomKey\", randomKey );"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
 					],
-					"cookie": [],
-					"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":\"{{testUserId}}\",\n    \"title\":\"{{title}}\",\n    \"body\":\"\",\n    \"randomKey\": \"{{$randomInt}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all posts Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 25 Mar 2025 13:00:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "1000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "999"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1742907654"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "https://jsonplaceholder.typicode.com/posts/101"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "925e97eedc34e5e8-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								},
+								{
+									"key": "server-timing",
+									"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete - Correct id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all posts Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 25 Mar 2025 13:00:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "1000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "999"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1742907654"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "https://jsonplaceholder.typicode.com/posts/101"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "925e97eedc34e5e8-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								},
+								{
+									"key": "server-timing",
+									"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
+						}
+					]
 				}
 			]
 		},
 		{
-			"name": "Delete - Correct id",
-			"event": [
+			"name": "Negative Scenarious",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"  pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/posts/1",
-					"host": [
-						"{{base_url}}"
+					"name": "Create Post - incorrect userId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {",
+									"  pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
 					],
-					"path": [
-						"posts",
-						"1"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Get all posts Copy",
-					"originalRequest": {
+					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+							"raw": "{\n    \"userId\":\"{{notExistsUserId}}\",\n    \"title\":\"{{title}}\",\n    \"body\":\"\"\n    }\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -385,308 +583,335 @@
 							}
 						},
 						"url": {
-							"raw": "https://jsonplaceholder.typicode.com/posts",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts",
 							"host": [
-								"jsonplaceholder",
-								"typicode",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts"
 							]
 						}
 					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Date",
-							"value": "Tue, 25 Mar 2025 13:00:50 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "95"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Report-To",
-							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
-						},
-						{
-							"key": "Reporting-Endpoints",
-							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
-						},
-						{
-							"key": "Nel",
-							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "X-Ratelimit-Limit",
-							"value": "1000"
-						},
-						{
-							"key": "X-Ratelimit-Remaining",
-							"value": "999"
-						},
-						{
-							"key": "X-Ratelimit-Reset",
-							"value": "1742907654"
-						},
-						{
-							"key": "Vary",
-							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
-						},
-						{
-							"key": "Access-Control-Allow-Credentials",
-							"value": "true"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Expires",
-							"value": "-1"
-						},
-						{
-							"key": "Access-Control-Expose-Headers",
-							"value": "Location"
-						},
-						{
-							"key": "Location",
-							"value": "https://jsonplaceholder.typicode.com/posts/101"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Etag",
-							"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						},
-						{
-							"key": "cf-cache-status",
-							"value": "DYNAMIC"
-						},
-						{
-							"key": "Server",
-							"value": "cloudflare"
-						},
-						{
-							"key": "CF-RAY",
-							"value": "925e97eedc34e5e8-IAD"
-						},
-						{
-							"key": "alt-svc",
-							"value": "h3=\":443\"; ma=86400"
-						},
-						{
-							"key": "server-timing",
-							"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
-				}
-			]
-		},
-		{
-			"name": "Delete - incorrect id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"",
-							"const response = pm.response.json();",
-							"",
-							"pm.test(\"Status code is 200\", function () {",
-							"   pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Api response body is empty\", function () {",
-							"    pm.expect(response).to.eql({});",
-							"});"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/posts/104",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"posts",
-						"104"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Get all posts Copy",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
-							"options": {
-								"raw": {
-									"language": "json"
+							"name": "Get all posts Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
 								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 25 Mar 2025 13:00:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "1000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "999"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1742907654"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "https://jsonplaceholder.typicode.com/posts/101"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "925e97eedc34e5e8-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								},
+								{
+									"key": "server-timing",
+									"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete - incorrect id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Api response body is empty\", function () {",
+									"    pm.expect(response).to.eql({});",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
 							}
-						},
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
 						"url": {
-							"raw": "https://jsonplaceholder.typicode.com/posts",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/{{incorrectPostId}}}",
 							"host": [
-								"jsonplaceholder",
-								"typicode",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
-								"posts"
+								"posts",
+								"{{incorrectPostId}}}"
 							]
 						}
 					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Date",
-							"value": "Tue, 25 Mar 2025 13:00:50 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "95"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Report-To",
-							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
-						},
-						{
-							"key": "Reporting-Endpoints",
-							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
-						},
-						{
-							"key": "Nel",
-							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "X-Ratelimit-Limit",
-							"value": "1000"
-						},
-						{
-							"key": "X-Ratelimit-Remaining",
-							"value": "999"
-						},
-						{
-							"key": "X-Ratelimit-Reset",
-							"value": "1742907654"
-						},
-						{
-							"key": "Vary",
-							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
-						},
-						{
-							"key": "Access-Control-Allow-Credentials",
-							"value": "true"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Expires",
-							"value": "-1"
-						},
-						{
-							"key": "Access-Control-Expose-Headers",
-							"value": "Location"
-						},
-						{
-							"key": "Location",
-							"value": "https://jsonplaceholder.typicode.com/posts/101"
-						},
-						{
-							"key": "X-Content-Type-Options",
-							"value": "nosniff"
-						},
-						{
-							"key": "Etag",
-							"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						},
-						{
-							"key": "cf-cache-status",
-							"value": "DYNAMIC"
-						},
-						{
-							"key": "Server",
-							"value": "cloudflare"
-						},
-						{
-							"key": "CF-RAY",
-							"value": "925e97eedc34e5e8-IAD"
-						},
-						{
-							"key": "alt-svc",
-							"value": "h3=\":443\"; ma=86400"
-						},
-						{
-							"key": "server-timing",
-							"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+							"name": "Get all posts Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":\"1\",\n    \"title\":\"{{$randomString}}\",\n    \"body\":\"{{$randomString}}\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 25 Mar 2025 13:00:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1742907650&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Fv%2BSW298Q42%2FrNe3sbAvAZLOlugDco4e1w2t6eAKD%2BA%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "1000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "999"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1742907654"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "https://jsonplaceholder.typicode.com/posts/101"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5f-aRPE+O8IXlDybaxmPJPaFMMV3cI\""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "925e97eedc34e5e8-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								},
+								{
+									"key": "server-timing",
+									"value": "cfL4;desc=\"?proto=TCP&rtt=2401&min_rtt=2236&rtt_var=956&sent=3&recv=5&lost=0&retrans=0&sent_bytes=2825&recv_bytes=876&delivery_rate=1295169&cwnd=243&unsent_bytes=0&cid=48b7864f39891e90&ts=46&x=0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"userId\": \"1\",\n    \"title\": \"{{$randomString}}\",\n    \"body\": \"{{$randomString}}\",\n    \"id\": 101\n}"
+					]
 				}
 			]
 		}
