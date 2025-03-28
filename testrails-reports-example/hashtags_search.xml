@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R7</id>
+	<name>Hashtags-search</name>
+	<description></description>
+	<config></config>
+	<createdon>2025-03-26T09:34:44Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>12</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+	<section>
+		<name>Позитивное</name>
+		<description></description>
+						<tests>
+						            																																																																		<test>
+				<id>T65</id>
+				<title>Я могу искать контент хеш тегам из топа</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C56</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T66</id>
+				<title>Я могу искать контент по хеш тегам максимальной длины (500 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C57</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T67</id>
+				<title>Я могу искать контент по несуществующим хеш тегам</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C58</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T68</id>
+				<title>Я могу искать контент по нескольким хештегам</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C59</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T69</id>
+				<title>Я могу искать контент по произвольным хештегам</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C60</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T71</id>
+				<title>Я могу искать контент по хештегам содержащим спецсимволы включая #</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C62</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T72</id>
+				<title>Верстка поиска по хештегам корректно отображается</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C67</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T73</id>
+				<title>Поиск хештегов корректно отображается на разных устройствах</title>
+												<template>Test Case (Text)</template>
+																<type>Compatibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C68</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T101</id>
+				<title>Приложение корректно читается вслух для слабовидящих людей</title>
+												<template>Test Case (Text)</template>
+																<type>Accessibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C77</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Irina Gracheva</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:32:18Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T102</id>
+				<title>Приложение корректно отображает шрифты для людей с ограниченными возможностями</title>
+												<template>Test Case (Text)</template>
+																<type>Accessibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C78</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:32:49Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T103</id>
+				<title>Я могу искать по пустым хештегам</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C79</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Irina Gracheva</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:33:10Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T104</id>
+				<title>Вкладки корректно отображаются для поиска по хештегам</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>JW-2.1</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C80</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Irina Gracheva</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T15:44:08Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T15:43:18Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+	<section>
+		<name>Негативное</name>
+		<description></description>
+						<tests>
+						            																																																																		<test>
+				<id>T70</id>
+				<title>Я не могу искать контент по хештегам максимальной длины (более 500 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C61</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:33:36Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:35:01Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:34:44Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+</run>

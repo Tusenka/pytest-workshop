@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R5</id>
+	<name>Bluesky-posts-page</name>
+	<description>Разбито на классы эквивалентости - создание поста - негативный и позитивный сценарии</description>
+	<config></config>
+	<createdon>2025-03-26T07:11:07Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>96</percent>
+			<count>23</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>4</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+	<section>
+		<name>Создание поста</name>
+		<description></description>
+										<sections>
+	<section>
+		<name>Позитивное</name>
+		<description></description>
+						<tests>
+						            																																																																		<test>
+				<id>T19</id>
+				<title>Я могу создавать пост с валидными данными</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>JW-2</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>я зарегестрированна в социальной сети blusky и зашла в приложение через ios&gt;8.0.0</preconds>
+															<steps>1. Я создаю пост с текстом
+&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&quot;
+</steps>
+															<expected>Пост создан</expected>
+									</custom>
+												<caseid>C14</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T21</id>
+				<title>Я могу создать пост со спецсимволами</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C16</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T23</id>
+				<title>Я могу создавать пост состоящий только изз текста без аттачментов в виде изображений, камеры, видео</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C18</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T22</id>
+				<title>Я могу создавать пост с изображениями</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C17</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T24</id>
+				<title>Я могу создавать пост с видео</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C19</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T25</id>
+				<title>Я могу создавать пост с камерой</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C20</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T26</id>
+				<title>Я могу создавать пост максимальной длины (300 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C21</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T28</id>
+				<title>Я могу создавать пост без возможности ответа</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C23</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T29</id>
+				<title>Я могу создавать пост с возможностью ответа любому польлзователю</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C24</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T30</id>
+				<title>Я могу создавать пост доступный для ответа только от упомянутых пользователей, последуемых, и последователей</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C25</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T31</id>
+				<title>Я могу создавать пост доступный для ответа только от упомянутых пользователей</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C26</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T32</id>
+				<title>Я могу создавать пост доступным только для ответа от последователей</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C27</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																				<test>
+				<id>T33</id>
+				<title>Я могу создавать пост доступным для редактирования упомянутых Я могу создавать пост доступным для редактирования последуемых</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C28</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Untested</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T34</id>
+				<title>Я могу создавать пост доступным для ответа только от последуемых</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C29</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T35</id>
+				<title>Я могу создать пост только с изображением</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C30</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																																<test>
+				<id>T36</id>
+				<title>Я могу создавать пост от имени нового пользователя с только что подтвержденным по ссылке email</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references>JW-2.2</references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C31</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Irina Gracheva</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																														<defects>1</defects>
+																<changes>
+															<change>
+						<createdon>2025-03-27T08:53:32Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Failed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects>1</defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:53:17Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Failed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:14:04Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Failed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment>Я не могу создать пост от имени пользователя с только что подтвержденным по ссылке email т.к. приложение запрашивает повторное подтверждение email.
+</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T37</id>
+				<title>Я могу создавать пост от имени нового пользователя с только что подтвержденным по коду email</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C32</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T38</id>
+				<title>Я могу создавать пост на нескольких языках</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C33</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:18:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:18:13Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T39</id>
+				<title>Я могу создать альтернативным описанием изображениями для людей со спецвозможностями</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C63</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:11:50Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T40</id>
+				<title>Создание поста корректно отображается при разных устройтвах</title>
+												<template>Test Case (Text)</template>
+																<type>Compatibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C64</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:12:04Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T41</id>
+				<title>Верстка для создания поста корректно отображается</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C65</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:18:17Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T99</id>
+				<title>Приложение корректно читается вслух для слабовидящих людей</title>
+												<template>Test Case (Text)</template>
+																<type>Accessibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C75</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:31:43Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T100</id>
+				<title>Приложение корректно отображает шрифты для слабовидящих людей</title>
+												<template>Test Case (Text)</template>
+																<type>Accessibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C76</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:31:58Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+	<section>
+		<name>Негативное</name>
+		<description></description>
+						<tests>
+						            																																																																		<test>
+				<id>T20</id>
+				<title>Я не могу создать пост с пустым телом</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C15</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T27</id>
+				<title>Я не могу создавать пост больше максимальной длины (300 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C22</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:35:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:25Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T07:11:07Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>
