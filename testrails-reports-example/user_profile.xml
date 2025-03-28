@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R6</id>
+	<name>User profile</name>
+	<description></description>
+	<config></config>
+	<createdon>2025-03-26T09:25:37Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>96</percent>
+			<count>23</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>4</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+	<section>
+		<name>Позитивные сценарии</name>
+		<description></description>
+						<tests>
+						            																																																																																	<test>
+				<id>T42</id>
+				<title>Возможность изменять отображаемое имя используя спецсимволы</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C34</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T43</id>
+				<title>Возможность изменять описание  используя спецсимволы</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C35</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T44</id>
+				<title>Возможность изменять отображаемое изображение с помощью камеры</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C36</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T45</id>
+				<title>Возможность изменять отображаемое изображение с помощью галлерии изображений</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C37</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T46</id>
+				<title>Возможность удаления аватара</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C38</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T49</id>
+				<title>Приложение корректно отображает посты</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C41</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Failed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:46:15Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Failed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment>Невозможно прочитать максимальную длину символов
+</comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:28:11Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Невозможно прочитать максимальную длину символов</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T52</id>
+				<title>Приложение корректно отображает на странице в профиле пользователя</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C44</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T53</id>
+				<title>Приложение корректно отображает число последователей и последуемых</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C45</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T54</id>
+				<title>Приложение корректно отображает видео</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C46</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T55</id>
+				<title>Приложение корректно отображает Starter Pack</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C47</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T56</id>
+				<title>Приложение корректно отображает ошибки при изменении настроек пользователя</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C48</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T57</id>
+				<title>Приложение может корректно создавать Starter Pack со спецсимволами</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C49</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T58</id>
+				<title>Приложение может корректно отобржает List</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C50</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T59</id>
+				<title>Кнопка создания поста присутсвует в профиле пользователя</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C51</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T50</id>
+				<title>Приложение корректно отображает ответы</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C42</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T51</id>
+				<title>Приложение корректно отображает медиа</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C43</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T60</id>
+				<title>Возможность изменять отображаемое имя не спецсимволы</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C52</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T61</id>
+				<title>Возможность изменять описание не используя спецсимволы</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C53</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T62</id>
+				<title>Приложение корректно отображает пустые списки</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C54</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Irina Gracheva</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T63</id>
+				<title>Приложение корректно использует альтренативные тесты для изображений</title>
+												<template>Test Case (Text)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C55</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																					<test>
+				<id>T96</id>
+				<title>Верстка приложения корректно отображается</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C72</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Untested</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																		<changes>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T64</id>
+				<title>Верстка приложения корректно отображается</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C66</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																				<test>
+				<id>T95</id>
+				<title>Приложение имеет корректные шрифты для людей со спецсвозможностями</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C71</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Untested</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:23:42Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T97</id>
+				<title>Приложенеиие использует корректные шрифты для людей со спецвозможностями</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C73</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T98</id>
+				<title>Приложение корректно читается вслух для слабовидящих людей</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C74</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+	<section>
+		<name>Негативные сценарии</name>
+		<description></description>
+						<tests>
+						            																																																																																	<test>
+				<id>T47</id>
+				<title>Приложение возвращает ошибку если попытатся изменить отображаемое имя на слишком длинное (более 50 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C39</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																																	<test>
+				<id>T48</id>
+				<title>Приложение возвращает ошибку если попытатся изменить описание на слишком длинное (более 500 символов)</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+												<caseid>C40</caseid>
+																			<casestatus></casestatus>
+																<caseassignedto></caseassignedto>
+																	<status>Passed</status>
+																<assignedto>Irina Gracheva</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2025-03-27T08:45:09Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-27T08:34:12Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version>1.0</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:27:24Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Passed</status>
+																								<assignedto>Irina Gracheva</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2025-03-26T09:25:37Z</createdon>
+																		<createdby>Irina Gracheva</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+</run>
